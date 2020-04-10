@@ -5,7 +5,9 @@ AWS C++ SDK packaged as .debs.
 ## Build
 
 ```sh
-	make VERSION=<version>
+git submodule update --init
+sudo apt-get install -y cmake zlib1g-dev build-essential libcurl4-gnutls-dev libgnutls28-dev libssl-dev
+VERSION=1.6.39 make
 ```
 
 ## Install
